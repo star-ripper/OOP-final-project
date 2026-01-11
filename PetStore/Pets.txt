@@ -1,0 +1,4 @@
+Dog:    2    2    2
+Bird:    3    3    3
+Bird:    Ari    1    Parrot
+Dog:    4    4    4
