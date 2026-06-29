@@ -1,0 +1,31 @@
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="petstore.Controllers.CustomerMenuController"
+      spacing="12"
+      alignment="CENTER"
+      prefWidth="400"
+      prefHeight="400">
+
+    <Label text="Customer Menu"
+           style="-fx-font-size: 20px; -fx-font-weight: bold;" />
+
+    <!-- Pet Section -->
+    <Button text="View All Pets" onAction="#viewPets" maxWidth="250"/>
+    <Button text="Buy Pet" onAction="#buyPetsPopup" maxWidth="250"/>
+
+    <Separator />
+
+    <!-- Inventory Section -->
+    <Button text="View Inventory" onAction="#viewInventory" maxWidth="250"/>
+    <Button text="Buy Inventory Item" onAction="#buyInventoryPopup" maxWidth="250"/>
+
+    <Separator />
+
+    <Button text="Logout" onAction="#logout" maxWidth="250"/>
+    <Label fx:id="messageLabel"/>
+</VBox>

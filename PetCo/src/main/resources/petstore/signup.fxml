@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="10" alignment="CENTER"
+      xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="petstore.Controllers.SignupController"
+      prefWidth="350"
+      prefHeight="300">
+
+    <Label text="Sign Up"
+           style="-fx-font-size: 20px; -fx-font-weight: bold;" />
+
+    <TextField fx:id="usernameField" promptText="Username" />
+    <PasswordField fx:id="passwordField" promptText="Password" />
+
+    <Button text="Create Account" onAction="#handleSignup" />
+    <Button text="Back to Login" onAction="#goBack" />
+
+    <Label fx:id="messageLabel" />
+
+</VBox>

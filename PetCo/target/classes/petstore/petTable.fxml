@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="petstore.Controllers.PetTableController">
+
+    <center>
+        <TableView fx:id="petTable">
+            <columns>
+                <TableColumn text="ID" fx:id="idCol"/>
+                <TableColumn text="Name" fx:id="nameCol"/>
+                <TableColumn text="Age" fx:id="ageCol"/>
+                <TableColumn text="Status" fx:id="statusCol"/>
+            </columns>
+        </TableView>
+    </center>
+
+</BorderPane>
